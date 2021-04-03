@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font: Asap, sans-serif;
+    --body-bgColor: #24272E;
+}
+body {
+    background-color: var(--body-bgColor);
+}
+marquee{
+    font-family: var(--font);
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--body-bgColor);
+    font-size: 30px;
+    line-height: 1.5rem;
+    box-shadow: 4px 0 4px 0 #24272E;
+}
+header {
+    background: white;
+    padding: 20px;
+}
+header > h1 {
+    color: var(--body-bgColor);
+    text-align: center;
+    font-family: var(--font);
+}
+
+.score-board {
+    position: relative;
+    border: 2px solid white;
+    width: 20%;
+    margin: 20px auto;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: var(--font);
+}
+ #user-label { 
+    position: absolute;
+    left: -20px;
+    top: 15px;
+    background-color: tomato;
+ }
+ #computer-label { 
+    position: absolute;
+    right: -25px;
+    top: 15px;
+    background-color: tomato;
+ }
+ .result p {
+     text-align: center;
+     font-size: 30px;
+     color: white;
+     font-family: var(--font);
+     font-weight: bold;
+ }
+ .choices {
+     text-align: center;
+     margin: 40px 0;
+ }
+ .choice {
+     display: inline-block;
+     transition: all 0.5 ease;
+     width: 20%;
+ }
+ .choice img {
+     border-radius: 50%;
+     border: 4px solid white;
+     object-fit: cover;
+ }
+ 
+ .choice:hover  {
+     cursor: pointer;
+     background: #272c38;
+ }
+ #action-message {
+     text-align: center;
+     color: white;
+     font-family: var(--font);
+     font-weight: bold;
+     font-size: 20px;
+ }
+
+ .green-glow {
+     border: 4px solid green;
+     box-shadow: 4px 6px 10px rgb(9, 106, 9);
+     border-radius: 8px;
+     background: #343e55;
+     backdrop-filter: blur(10px);
+    width: 30%;
+ }
+
+ .red-glow {
+    border: 4px solid rgb(232, 11, 29);
+    box-shadow: 4px 6px 10px rgb(130, 19, 19);
+    border-radius: 8px;
+    background: #343e55;
+    backdrop-filter: blur(10px);
+    width: 30%;
+}
+
+.grey-glow {
+    border: 4px solid rgb(162, 218, 162);
+    box-shadow: 4px 6px 10px rgb(101, 165, 101);
+    border-radius: 8px;
+    background: #343e55;
+    backdrop-filter: blur(10px);
+    width: 30%;
+}
